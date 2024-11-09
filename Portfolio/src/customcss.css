@@ -51,6 +51,26 @@ body {
     color: #76D5FB;
     font-size: 28px;
 }
+
+.portfolioSection {
+    min-height: 100vh; /* Ensure the section takes up the full viewport height */
+    padding:  0 15px;
+    background-color: transparent;
+  }
+  
+  .portfolioContent {
+    font-size: 16px;
+    
+  }
+  
+  .portfolioContent p {
+    font-family: Arial, sans-serif;
+    color: #76D5FB ;
+    opacity: 0.9;
+    transition: opacity 1s ease-in-out;
+  }
+
+  
 /* responsive */
 @media screen and (max-width:767px) {
     /* hero */
