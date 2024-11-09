@@ -1,0 +1,71 @@
+/* body */
+body {
+    place-items: flex-start !important;
+}
+/* header */
+.headerMain {
+    padding: 0 15px;
+}
+#headerName h1{
+    color: #76D5FB;
+    font-size: 28px;
+}
+
+#headerDesgn h2{
+    color: #76D5FB;
+    font-size: 18px;
+}
+
+
+/* hero section */
+.heroMain {
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+}
+.heroInfo {
+    width: 50%;
+    display: block;
+}
+.heroInfoinner{
+    color: #76D5FB;
+}
+.heroModel {
+    width: 50%;
+}
+
+.heroModel canvas{
+    width: 100% !important;
+}
+
+/* portfolio */
+.portDataMain {
+    padding: 0 15px;
+}
+.portDatahead {
+    display: block;
+    text-align: center;
+}
+
+.portDatahead h2{
+    color: #76D5FB;
+    font-size: 28px;
+}
+/* responsive */
+@media screen and (max-width:767px) {
+    /* hero */
+    .heroInfoinner {
+        font-size: 14px;
+    }
+    .heroMain {
+        flex-direction: column;
+    }
+    .heroInfo {
+        width: 100%;
+    }
+    .heroModel {
+        width: 100%;
+    }
+}
+
+
