@@ -1,0 +1,26 @@
+/* src/App.css */
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('/fonts/Nanum_Gothic_Coding/NanumGothicCoding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('/fonts/Nanum_Gothic_Coding/NanumGothicCoding-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Apply globally */
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: #1c1b1b;
+}
+
+
+#root {
+  padding: 0
+}
+

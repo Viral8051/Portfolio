@@ -1,0 +1,332 @@
+/* body */
+body {
+    place-items: flex-start !important;
+}
+
+h2 {
+  color: #5cd5fb;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+p {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* header */
+.headerMain {
+    padding: 0 15px;
+}
+#headerName h1{
+    color: #76D5FB;
+    font-size: 28px;
+}
+
+#headerDesgn h2{
+    color: #76D5FB;
+    font-size: 18px;
+}
+
+
+/* hero section */
+.heroMain {
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+}
+.heroInfo {
+    width: 50%;
+    display: block;
+}
+.heroButtons {
+  display: flex;
+  flex-direction: row;
+}
+.heroButtons button{
+  background: none;
+  padding: 0 5px;
+  margin:0;
+}
+.heroButtons button:hover {
+  border-color: transparent;
+}
+.heroButtons button:focus, .heroButtons button:focus-visible {
+  outline: none;
+}
+.heroButtons button a{
+  color: #fff;
+  transition: all ease-out 0.5s;
+  font-size: 24px;
+}
+.heroButtons button a:hover{
+  color: #76D5FB;
+}
+.heroInfoinner{
+    color: #fff;
+}
+.heroModel {
+    width: 50%;
+}
+
+.heroModel canvas{
+    width: 100% !important;
+}
+
+/* about me Section */
+
+#about .section-title {
+    text-align: center;
+}
+.aboutDesc {
+    padding: 0 15px;
+    margin: 0;
+}
+
+.aboutDesc p {
+    padding: 0;
+    margin: 0 0 15px;
+    text-align: justify;
+}
+.skills {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+.skills h3 {
+    color: #5cd5fb;
+    text-align: center;
+    font-size: 28px;
+}
+.blinkCurser{
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .skillsList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-items: center;
+    padding: 20px; /* Soft shadow for a lifted effect */
+  }
+  .skillRow {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .skillListItem {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+  }
+  .skillListItem.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .skillListItem:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+  }
+  .skillListItem img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px; /* Optional: round edges slightly */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add depth to images */
+  }
+/* portfolio */
+.portDatahead {
+    display: block;
+    text-align: center;
+}
+.portDataBody {
+  width: 100%;
+  
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.portCardsWrapper {
+  display: flex;
+  position: relative;
+  height: auto;
+  padding: 230px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.portCard {
+  width: 500px;
+  height: 350px;
+  padding: 20px;
+  position: absolute;
+  background: #00000061;
+  border-radius: 15px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  
+}
+
+.portCard.active {
+  z-index: 2;
+  background: #000;
+  box-shadow: 0px 4px 8px rgb(255 255 255 / 22%);
+}
+
+.portCard.next {
+  z-index: 1;
+  transform: translateX(30%) scale(0.9); /* Slightly offset and smaller */
+}
+
+.portCardImage {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.portCardImage img {
+  width: 100%;
+  height: auto; /* Consistent height for images */
+  object-fit: cover; /* Maintains aspect ratio while filling the area */
+  border-radius: 10px 10px 0 0;
+}
+
+.portCardskills {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  right: 0px;
+  background: #000;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.portCardskills img {
+  width: 100%;
+  height: auto;
+}
+
+.portCardDesc {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+.portCardDesc p {
+  font-size: 16px;
+}
+
+.portCardDescHead a {
+  color: #76D5FB;
+  transition: all ease-out 0.5s;
+}
+.portCardDescHead a:hover{
+  color: red;
+}
+.portCardButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.portCardButtons button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  color: #5cb1d4;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.portCardButtons button:hover {
+  color: #fff;
+}
+.portCardButtons button:focus, button:focus-visible {
+  outline: none;
+}
+.portCardButtons button:disabled {
+  background: none;
+  color: red;
+  cursor: not-allowed;
+}
+
+
+  
+/* responsive */
+@media screen and (max-width:767px) {
+    
+  /* hero */
+    .heroMain {
+        flex-direction: column;
+    }
+    .heroInfo {
+        width: 100%;
+    }
+    .heroModel {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:425px) {
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .skills h3 {
+    font-size: 20px;
+  }
+  .skillListItem {
+    width: 47px;
+    height: 47px;
+  }
+  .skillListItem img {
+    width: 45px;
+    height: 45px;
+  }
+  .portCard {
+    width: 300px;
+    height: 250px;
+    transform: translateX(0%) scale(1) !important;
+  }
+  .portCardsWrapper {
+    padding: 150px 0;
+  }
+  .skillRow {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .skillListItem {
+    width: 40px;
+    height: 40px;
+  }
+  .skillListItem img {
+  width: 40px;
+  height: 40px;
+  }
+  .portCard {
+    width: 80%;
+    height: 70%;
+  }
+
+}
+
