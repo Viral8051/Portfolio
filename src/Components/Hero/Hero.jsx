@@ -43,6 +43,7 @@ const Hero = () => {
   };
   return (
     <>
+    <div className="container">
       <div className="heroMain">
         <div className='heroInfo'>
             <p className='heroInfoinner'>
@@ -69,10 +70,11 @@ const Hero = () => {
             </div>
 
         </div>
-        <div className='heroModel'>
+        {/* <div className='heroModel'>
           <ThreeAnimation></ThreeAnimation>
-        </div>
+        </div> */}
       </div>
+    </div>
     </>
   );
 };

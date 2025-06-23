@@ -3,6 +3,13 @@ body {
     place-items: flex-start !important;
 }
 
+.container{
+  display:block;
+  padding: 0 15px;
+
+
+}
+
 h2 {
   color: #5cd5fb;
   font-size: 32px;
@@ -15,9 +22,7 @@ p {
 }
 
 /* header */
-.headerMain {
-    padding: 0 15px;
-}
+
 #headerName h1{
     color: #76D5FB;
     font-size: 28px;
@@ -28,6 +33,43 @@ p {
     font-size: 18px;
 }
 
+/* Navbar */
+
+.navbar{
+  display: block;
+  width: 30%;
+  margin: 15px auto;
+
+}
+
+.mainNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    background: #605f5f2e;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.navList{
+
+} 
+.navList a{
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px;
+    border-radius: 20px;
+}
+.navList a:hover {
+    color: #fff;
+    transition: all ease-out 0.5s;
+}
+.navList.active  a{
+    background: #76d5fb;
+    color: #000;
+} 
+ */
 
 /* hero section */
 .heroMain {
@@ -152,13 +194,23 @@ p {
 }
 .portDataBody {
   width: 100%;
-  
   margin: 0;
   padding: 0;
   position: relative;
   overflow: hidden;
+  transition: all 0.7s ease;
 }
-
+.portDataBody:after {
+    background: linear-gradient(90deg, black, #000000d1, #00000094);
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    height: 100%;
+    content: '';
+}
 .portCardsWrapper {
   display: flex;
   position: relative;
@@ -175,7 +227,7 @@ p {
   position: absolute;
   background: #00000061;
   border-radius: 15px;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+ 
   
 }
 
@@ -183,6 +235,7 @@ p {
   z-index: 2;
   background: #000;
   box-shadow: 0px 4px 8px rgb(255 255 255 / 22%);
+   transition: transform 0.7s ease, opacity 0.7s ease;
 }
 
 .portCard.next {
@@ -238,9 +291,11 @@ p {
   color: red;
 }
 .portCardButtons {
+  position: relative;
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  z-index: 1;
 }
 
 .portCardButtons button {
@@ -269,6 +324,12 @@ p {
 
   
 /* responsive */
+
+@media screen and (max-width:1024px) {
+  .navbar {
+    width: 50%;
+  }
+}
 @media screen and (max-width:767px) {
     
   /* hero */
@@ -281,6 +342,10 @@ p {
     .heroModel {
         width: 100%;
     }
+
+    .navbar {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width:425px) {

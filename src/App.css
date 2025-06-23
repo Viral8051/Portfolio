@@ -1,3 +1,5 @@
+
+
 /* src/App.css */
 @font-face {
   font-family: 'Nanum Gothic';
@@ -21,6 +23,7 @@ body {
 
 
 #root {
-  padding: 0
+  padding: 0;
+  width:100%;
 }
 

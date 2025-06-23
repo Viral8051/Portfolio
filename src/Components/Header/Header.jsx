@@ -113,6 +113,7 @@ function Header() {
 
   return (
     <>
+    <div className="container">
       <div className='headerMain'>
         <div className='headerName' id='headerName'>
           <h1>
@@ -135,6 +136,7 @@ function Header() {
         <div className='headerDesgn' id='headerDesgn'>
           <h2>{designChars}</h2>
         </div>
+      </div>
       </div>
     </>
   );

@@ -65,24 +65,17 @@ function PortData() {
   };
 
   return (
+    <div className="container">
     <div className="portDataMain">
       <div className="portDatahead">
-        <h2>Portfolio</h2>
+        <h2>Projects</h2>
       </div>
-      <div className="portDataBody">
+      <div className="portDataBody" style={{backgroundImage: `url(${portfolioData[currentIndex].image})`}}>
         <div className="portCardsWrapper">
           {portfolioData.map((item, index) => (
             <div
               className={`portCard ${index === currentIndex ? 'active' : ''}`}
               key={index}
-              style={{
-                zIndex: index === currentIndex ? 2 : index < currentIndex ? 1 : 0,
-                opacity: index === currentIndex ? 1 : index === currentIndex + 1 ? 0.6 : 0.4,
-                transform: `translateX(${(index - currentIndex) * 3}%) scale(${
-                index === currentIndex ? 1 : index === currentIndex + 1 ? 1 : 1
-                })`,
-              transition: 'transform 0.5s ease, opacity 0.5s ease',
-              }}
             >
               <div className="portCardImage">
                 <img src={item.image} alt={`${item.title} portfolio`} />
@@ -109,6 +102,7 @@ function PortData() {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 }
