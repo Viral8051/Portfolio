@@ -5,7 +5,7 @@ import { faArrowRight, faArrowLeft, faGlobe } from '@fortawesome/free-solid-svg-
 
 const portfolioData = [
   {
-    title: 'Reliance Construcction',
+    title: 'Reliance Construction',
     location: 'India',
     image: 'images/PortImages/reliencecons.png',
     skillIcon: 'images/AboutMe/Skills/html5.png',
